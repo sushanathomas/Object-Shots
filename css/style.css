@@ -1,21 +1,82 @@
-/******************************************
-/* CSS
-/*******************************************/
-
-/* Box Model Hack */
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #fff4e6;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
+h1 {
+    margin-bottom: 25px;
+    color: #9b3b20;
+}
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+input {
+    width: 250px;
+    max-width: 100%;
+    padding: 12px;
+    border: 2px solid #9b3b20;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    border: 2px solid #9b3b20;
+    border-radius: 8px;
+    background-color: #9b3b20;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #74301b;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+img:not([src]),
+img[src=""] {
+    display: none;
+}
+
+h3 {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 500px) {
+    input,
+    button {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+}
